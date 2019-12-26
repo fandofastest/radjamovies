@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Free Movie HD</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="genre">Categories</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="popular">Popular Movies</string>
+    <string name="act">Action</string>
+    <string name="romance">Romance</string>
+    <string name="scf">Sci-fi</string>
+    <string name="anim">Anime</string>
+    <string name="latest">New Update</string>
+    <string name="sharmsg">Watch movies free. Intall and try now!!!</string>
+    <string name="geturi"><![CDATA[https://drive.google.com/uc?export=download&amp;id=]]></string>
+    <string name="menu_search">Search</string>
+
+    <string name="original_category">Original Category</string>
+    <string name="original_preference">Original Preference</string>
+    <string name="original_checkbox_preference">Original CheckBox Preference</string>
+    <string name="original_summary">Original Summary</string>
+    <string name="original_summary_with_icon">Original Summary + Icon</string>
+    <string name="original_checkbox_key">original_checkbox_key</string>
+    <string name="original_checkbox_summary_on">Original CheckBox Summary On</string>
+    <string name="original_checkbox_summary_off">Original CheckBox Summary Off</string>
+    <string name="original_switch_preference">Original Switch Preference</string>
+    <string name="original_switch_preference_on">Original Switch Summary On</string>
+    <string name="original_switch_preference_off">Original Switch Summary Off</string>
+
+    <string name="material_category">Material Category</string>
+    <string name="material_preference">Material Preference</string>
+    <string name="material_checkbox_preference">Material CheckBox Preference</string>
+    <string name="material_summary">Material Summary</string>
+    <string name="material_summary_with_icon">Material Summary + Icon</string>
+    <string name="material_checkbox_key">material_checkbox_key</string>
+    <string name="material_checkbox_summary_on">Material CheckBox Summary On</string>
+    <string name="material_checkbox_summary_off">Material CheckBox Summary Off</string>
+    <string name="material_switch_preference">Material Switch Preference</string>
+    <string name="material_switch_preference_on">Material Switch Summary On</string>
+    <string name="material_switch_preference_off">Material Switch Summary Off</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="share_msg">Watch movies free, no registration required. Install now!!!</string>
+</resources>

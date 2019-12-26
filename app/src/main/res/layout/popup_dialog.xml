@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@color/white"
+    android:id="@+id/bodypop_up"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ic_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ic_icon"
+            android:layout_marginLeft="10dp"
+            android:maxLines="2"
+            android:text="text"
+            android:textSize="23sp"
+            android:textColor="#4E4D4D"/>
+
+        <ImageView
+            android:id="@+id/iconstar"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/txttitle"
+            android:layout_toRightOf="@+id/ic_icon"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/iconstar"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/textdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iconstar"
+            android:textColor="#4E4D4D"
+            android:maxLines="3"
+            android:text="text"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/imgbanner"
+            android:layout_below="@+id/textdesc"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toLeftOf="@+id/text_innstal"
+            android:layout_below="@+id/imgbanner"
+            android:text="Instal 1000.000+"
+            android:textSize="18sp"
+            android:textColor="#BDBABA"/>
+
+        <TextView
+            android:id="@+id/text_innstal"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="INSTALL"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bgpopup"
+            android:layout_below="@+id/imgbanner"
+            android:textColor="#F70808"
+            android:textSize="18sp" />
+
+</RelativeLayout>

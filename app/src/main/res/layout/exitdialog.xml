@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/white"
+    android:id="@+id/bodypop_up"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:gravity="center"
+    app:layout_constraintCircleRadius="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ic_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic512"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textMassage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_icon"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:gravity="center"
+        android:textColor="#4E4D4D"
+        android:text="Love this app, please rate us5 stars to support our developers!!!!"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/img_rate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:layout_below="@+id/textMassage"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btnmenu"
+            android:text="Install"
+            android:textColor="#4E4D4D"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_below="@+id/textMassage"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/rate"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/iconrate"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/rate"
+            android:layout_marginTop="3dp"
+            android:text="Rate App"
+            android:gravity="center"
+            android:textColor="#0A0A0A"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/img_share"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/img_rate"
+            android:background="@drawable/btnsplahs"
+            android:text="Install"
+            android:textColor="#4E4D4D"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_below="@+id/img_rate"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/ic_share_wait" />
+
+        <TextView
+            android:id="@+id/textshare"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/share"
+            android:text="Share"
+            android:gravity="center"
+            android:textColor="#FAF8F8"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/img_exit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:layout_below="@+id/img_share"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btnmenu"
+        android:text="Install"
+        android:textColor="#4E4D4D"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_below="@+id/img_share"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/exit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:background="@drawable/ic_exit_to"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/exit"
+            android:layout_marginTop="3dp"
+            android:text="Exit App"
+            android:gravity="center"
+            android:textColor="#0A0A0A"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>

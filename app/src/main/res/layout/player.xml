@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    android:keepScreenOn="true">
+
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        app:show_timeout="10000"
+        app:fastforward_increment="30000"
+        app:rewind_increment="30000"
+        app:controller_layout_id="@layout/buton_player"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        app:indicatorColor="@color/adsc"/>
+
+    <LinearLayout
+        android:id="@+id/controls_root"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#CC000000"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textMovies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="Judul Film"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/lay_sub"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginRight="170dp"
+        android:layout_marginLeft="195dp"
+        android:background="@drawable/bgsub"
+        android:visibility="visible">
+
+       <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+           android:layout_height="170dp"
+            android:background="@color/bg"
+            android:visibility="visible"
+            tools:ignore="MissingPrefix">
+
+           <TextView
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="15dp"
+               android:gravity="left"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Select Your Subtitle"
+               android:textStyle="bold"
+               android:textSize="18sp"
+               android:textColor="@color/white"/>
+
+            <RelativeLayout
+                android:id="@+id/midsub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@color/bg"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp">
+
+                <ListView
+                    android:id="@+id/list_sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true">
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="60dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@color/adsc"
+                    android:textColor="@color/white"
+                    android:text="Close" />
+            </RelativeLayout>
+       </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="no"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+</FrameLayout>
+

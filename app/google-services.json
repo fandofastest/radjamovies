@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "595585860752",
+    "firebase_url": "https://project-movie1.firebaseio.com",
+    "project_id": "project-movie1",
+    "storage_bucket": "project-movie1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595585860752:android:e899904c264f445452c415",
+        "android_client_info": {
+          "package_name": "com.radjamovies.free.hdmovies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595585860752-qqk67koi43adajvth9adhepr42l6i7gt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnhyoa0-KooLMHiMAlSLShjw0qedD4mHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595585860752-qqk67koi43adajvth9adhepr42l6i7gt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

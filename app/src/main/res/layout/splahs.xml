@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/iconmsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:id="@+id/iconmsphs"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic512" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomtextpolicy"
+        android:layout_marginBottom="30dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/playprogress"
+                style="@style/AVLoadingIndicatorView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible"
+                app:indicatorColor="@color/white"
+                app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+            <TextView
+                android:id="@+id/laod_ads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/playprogress"
+                android:layout_marginTop="5dp"
+                android:text="Loading Ads"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:id="@+id/play_mapp"
+                android:layout_width="180dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btnsplahs"
+                android:text="PLAY"
+                android:textColor="#FCFAFA"
+                android:textSize="20dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/rate_mapp"
+                android:layout_width="180dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/play_mapp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btnsplahs"
+                android:text="RATE"
+                android:textColor="#FCFAFA"
+                android:textSize="20dp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomtextpolicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please read and comply our policy before use this application. Thank You and Enjoy."
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/privacypolicy_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textpolicylink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/textpolicylink"
+                android:layout_alignLeft="@id/textpolicylink"
+                android:layout_alignRight="@id/textpolicylink"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorAccent" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
